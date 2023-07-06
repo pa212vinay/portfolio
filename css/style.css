@@ -21,33 +21,40 @@ body {
     box-sizing: border-box;
     font-family: "Ysabeau Infant";
     font-weight: 500;
-    background: #e9e9e9 !important;
+    /* background: #e9e9e9 !important; */
+    background: url(../img/backimg.jpg) 100% bottom no-repeat;
+    height: 100vh;
 }
 
 
 /* ---- Header CSS Start ---- */
 
-.navbar-brand .name-logo{
-    width: 9vmin;
+.navbar-brand .name-logo {
+    width: 8vmin;
 }
-.social-media-links{
+
+.social-media-links {
     display: flex;
     justify-content: end;
     align-items: center;
 }
+
 .social-media-links .social-media-icons {
     display: flex;
     padding: 0;
     width: auto;
     margin-bottom: 0;
 }
+
 .social-media-links .social-media-icons li {
     list-style: none;
 }
+
 .social-media-links .social-media-icons li a {
     padding: 5px 10px;
     text-decoration: none;
 }
+
 .social-media-links .social-media-icons li a img {
     width: 18px;
     height: auto;
@@ -56,7 +63,66 @@ body {
 /* ---- Header CSS End ---- */
 
 /* ---- Banner CSS Start ---- */
-.iam{
+
+.banner-main-section {
+    
+    padding-top: 100px;
+    margin-top: -77px;
+}
+
+.cus-container .row {
+    align-items: center;
+}
+
+.cus-container .row .cus-col-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.cus-container .row .cus-col-1 .main-heading {
+    font-size: 8vmin;
+    font-weight: 900;
+    line-height: .8;
+    margin-bottom: 20px;
+}
+
+.cus-container .row .cus-col-1 .hello-text {
+    font-size: 2.5vmin;
+    position: relative;
+    padding-left: 4vmin;
+}
+
+h5.hello-text:before {
+    content: ' ';
+    width: 2vmin;
+    height: 2px;
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    background: black;
+}
+
+.cus-container .row .cus-col-1 .main-heading .myname {
+    color: #ff602c;
+}
+
+.cus-container .row .cus-col-1 .user-role {
+    font-size: 4vmin;
+    font-weight: 600;
+}
+
+.cus-container .row .cus-col-1 .user-role a {
+    text-decoration: none;
+    color: #ff602c;
+}
+
+.cus-container .row .cus-col-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.iam {
     width: 45vmin;
 }
+
 /* ---- Banner CSS End ---- */
