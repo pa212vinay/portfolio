@@ -23,7 +23,8 @@ body {
     font-weight: 500;
     /* background: #e9e9e9 !important; */
     background: url(../img/backimg.jpg) 100% bottom no-repeat;
-    height: 100%
+    height: 100%;
+    font-size: 14px;
 }
 
 
@@ -77,6 +78,8 @@ body {
 .cus-container .row .cus-col-1 {
     display: flex;
     justify-content: center;
+    padding-top: calc(20px + 1vmin);
+    padding-bottom: calc(20px + 1vmin);
 }
 
 .cus-container .row .cus-col-1 .main-heading {
@@ -114,10 +117,6 @@ h5.hello-text:before {
 .cus-container .row .cus-col-1 .user-role a {
     text-decoration: none;
     color: #ff602c;
-}
-
-.my-para {
-    font-size: 14px;
 }
 
 .download-resume {
@@ -163,13 +162,11 @@ h5.hello-text:before {
     margin-bottom: 5vmin;
 }
 .col-about .about-sub-heading{
-    font-size: calc(10px + 1vmin);
+    font-size: calc(10px + 2vmin);
     font-weight: 600;
+    margin-bottom: 4px;
 }
 .col-about .about-sub-heading span{
     color: #ff602c;
-}
-.col-about .about-para{
-    font-size: calc(5px + 1vmin);
 }
 /* ---- About CSS End ---- */
