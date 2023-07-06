@@ -64,10 +64,8 @@ body {
 
 /* ---- Banner CSS Start ---- */
 
-.banner-main-section {
-    
-    padding-top: 100px;
-    margin-top: -77px;
+.cus-container{
+    padding-top: 6vmin;
 }
 
 .cus-container .row {
@@ -121,7 +119,18 @@ h5.hello-text:before {
     justify-content: center;
 }
 
-.iam {
+.iam-img {
+    padding: 20px;
+    background: #edc0c026;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 10px solid #fff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    outline: 1px solid #ff602c;
+    outline-offset: -5px;
+}
+
+.iam-img .iam {
     width: 45vmin;
 }
 
