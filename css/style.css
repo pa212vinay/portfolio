@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300;400;500;600;700;800;900;1000&display=swap');
+
+@font-face {
+    font-family: "Ysabeau Infant";
+    src: local("YsabeauInfant_light"),
+        url("./font/YsabeauInfant-VariableFont_wght.ttf") format("truetype");
+    font-weight: light;
+}
+
+/* ---- Custom CSS Start ---- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ysabeau Infant";
+    font-weight: 500;
+    background: #e9e9e9 !important;
+}
+
+
+/* ---- Header CSS Start ---- */
+
+.navbar-brand .name-logo{
+    width: 9vmin;
+}
+.social-media-links{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.social-media-links .social-media-icons {
+    display: flex;
+    padding: 0;
+    width: auto;
+    margin-bottom: 0;
+}
+.social-media-links .social-media-icons li {
+    list-style: none;
+}
+.social-media-links .social-media-icons li a {
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.social-media-links .social-media-icons li a img {
+    width: 18px;
+    height: auto;
+}
+
+/* ---- Header CSS End ---- */
+
+/* ---- Banner CSS Start ---- */
+.iam{
+    width: 45vmin;
+}
+/* ---- Banner CSS End ---- */
