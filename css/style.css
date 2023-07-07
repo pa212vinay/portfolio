@@ -34,9 +34,15 @@ body {
     width: 8vmin;
 }
 
+.cus-navbar .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding-right: 0px !important;
+}
+
 .social-media-links {
     display: flex;
-    justify-content: end;
     align-items: center;
 }
 
@@ -56,6 +62,10 @@ body {
     text-decoration: none;
 }
 
+.social-media-icons li:first-child a {
+    padding-left: 0px;
+}
+
 .social-media-links .social-media-icons li a img {
     width: 18px;
     height: auto;
@@ -67,7 +77,7 @@ body {
 /* ---- Banner CSS Start ---- */
 
 .cus-container {
-    padding-top: 6vmin;
+    padding-top: 9vmin;
     padding-bottom: 10vmin;
 }
 
@@ -149,24 +159,56 @@ h5.hello-text:before {
 
 
 /* ---- About CSS Start ---- */
-.cus-container-about{
+.cus-container-about {
     padding-top: 5vmin;
     padding-bottom: 5vmin;
 }
 
-/* -- Common heading for all menu -- */
-.common-heading{
+/* -- Common heading for all menu start -- */
+.common-heading {
     font-size: calc(10px + 3vmin);
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 5vmin;
 }
-.col-about .about-sub-heading{
+
+/* -- Common heading for all menu end -- */
+
+.col-about .about-para-section {
+    padding-bottom: calc(10px + 1vmin);
+}
+
+.col-about .about-sub-heading {
     font-size: calc(10px + 2vmin);
     font-weight: 600;
     margin-bottom: 4px;
 }
-.col-about .about-sub-heading span{
+
+.col-about .about-sub-heading span {
     color: #ff602c;
 }
+
+.personal-info {
+    padding-bottom: 30px;
+}
+
+.personal-info .info-item {
+    background: #00000014;
+    border-radius: 4px;
+    padding: calc(15px + 1vmin);
+}
+
+.skill-info .skill-progress .progress {
+    height: calc(15px + 1vmin);
+}
+
+.skill-info .skill-progress .progress .progress-bar {
+    background-color: #4d271aba !important;
+    padding-bottom: 2px;
+}
+
+.skill-info .skill-progress .cus-progress .progress-bar {
+    background-color: #808080 !important;
+}
+
 /* ---- About CSS End ---- */
