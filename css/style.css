@@ -25,6 +25,7 @@ body {
     background: url(../img/backimg.jpg) 100% bottom no-repeat;
     height: 100%;
     font-size: 16px;
+    background-attachment: fixed;
 }
 
 
@@ -39,6 +40,18 @@ body {
     outline: none !important;
     box-shadow: none !important;
     padding-right: 0px !important;
+}
+
+.cus-collapse .nav-item::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #ff602c;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.cus-collapse .nav-item:hover::after {
+    transform: scaleX(1);
 }
 
 .social-media-links {
@@ -88,8 +101,8 @@ body {
 .cus-container .row .cus-col-1 {
     display: flex;
     justify-content: center;
-    padding-top: calc(20px + 1vmin);
-    padding-bottom: calc(20px + 1vmin);
+    padding-top: calc(20px + 2vmin);
+    padding-bottom: calc(20px + 2vmin);
 }
 
 .cus-container .row .cus-col-1 .main-heading {
@@ -133,6 +146,7 @@ h5.hello-text:before {
     background: #fff;
     margin-top: 1vmin;
     font-size: 14px;
+    font-weight: 600;
 }
 
 .cus-container .row .cus-col-2 {
