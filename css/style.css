@@ -187,6 +187,9 @@ h5.hello-text:before {
 }
 
 /* -- Common heading for all menu end -- */
+.cus-container-about .cus-row-about .col-about {
+    padding-bottom: calc(20px + 3vmin);
+}
 
 .col-about .about-para-section {
     padding-bottom: calc(10px + 1vmin);
@@ -223,6 +226,74 @@ h5.hello-text:before {
 
 .skill-info .skill-progress .cus-progress .progress-bar {
     background-color: #808080 !important;
+}
+
+.col-exp-about .sub-col-exp-about{
+    padding-bottom: 20px;
+}
+.col-exp-about .exp-about-box {
+    background: #00000014;
+    border-radius: 4px;
+    padding: calc(15px + 1vmin);
+}
+
+.col-exp-about .exp-about-box .exp-about-item {
+    padding-bottom: 30px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.col-exp-about .exp-about-box .exp-about-item:last-child {
+    padding-bottom: 0px
+}
+
+.exp-about-item:before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #ff602c;
+    position: absolute;
+    left: 0px;
+}
+
+.col-exp-about .exp-about-box .exp-about-item .circle-dot {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #ff602c;
+    border-radius: 100%;
+    left: -7px;
+}
+
+.circle-dot:after {
+    transform: scale(0);
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    animation: circleMotion 2s infinite ;
+}
+
+@keyframes circleMotion {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+.col-exp-about .exp-about-box .exp-about-item .cal-date {
+    display: flex;
+    align-items: center;
+}
+.col-exp-about .exp-about-box .exp-about-item .inst-name{
+    padding-bottom: 10px;
+}
+.col-exp-about .exp-about-box .exp-about-item .description-about p {
+    margin-bottom: 0px;
 }
 
 /* ---- About CSS End ---- */
