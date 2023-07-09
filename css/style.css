@@ -320,6 +320,7 @@ h5.hello-text:before {
 
 .cus-container-portfolio {
     padding-top: 5vmin;
+    padding-bottom: 5vmin;
 }
 
 .cus-container-photo-gallery {
@@ -354,3 +355,57 @@ h5.hello-text:before {
     top: -35px;
     right: 10px;
 }
+
+/* ---- Contact CSS Start ---- */
+
+.cus-container-contact {
+    padding-top: 5vmin;
+    padding-bottom: 5vmin;
+}
+
+.contact-para-section .contact-sub-heading-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-para-section .contact-sub-heading-sec h4 {
+    color: #ff602c;
+    text-transform: capitalize;
+}
+
+.contact-para-section .contact-sub-heading-sec p {
+    text-transform: uppercase;
+}
+
+.cus-row-contact .col-contact-2 {
+    display: flex;
+    justify-content: center;
+}
+.cus-row-contact .contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #00000014;
+    border-radius: 4px;
+    padding: calc(10px + 1vmin);
+    min-width: 351px;
+}
+
+.cus-row-contact .contact-box img {
+    width: 30px;
+    padding-bottom: 20px;
+}
+
+.cus-row-contact .contact-box p {
+    margin-bottom: 0px;
+}
+
+.cus-row-contact .contact-box a {
+    text-decoration: none;
+    color: #222;
+}
+
+/* ---- Contact CSS End ---- */
