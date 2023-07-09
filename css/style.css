@@ -179,6 +179,7 @@ h5.hello-text:before {
 }
 
 /* -- Common heading for all menu start -- */
+
 .common-heading {
     font-size: calc(10px + 3vmin);
     font-weight: 800;
@@ -187,6 +188,7 @@ h5.hello-text:before {
 }
 
 /* -- Common heading for all menu end -- */
+
 .cus-container-about .cus-row-about .col-about {
     padding-bottom: calc(20px + 3vmin);
 }
@@ -228,13 +230,19 @@ h5.hello-text:before {
     background-color: #808080 !important;
 }
 
-.col-exp-about .sub-col-exp-about{
+.col-exp-about .sub-col-exp-about {
     padding-bottom: 20px;
 }
+
 .col-exp-about .exp-about-box {
     background: #00000014;
     border-radius: 4px;
     padding: calc(15px + 1vmin);
+}
+
+.education-title h4 {
+    font-size: 20px;
+    padding-bottom: 15px;
 }
 
 .col-exp-about .exp-about-box .exp-about-item {
@@ -273,27 +281,76 @@ h5.hello-text:before {
     position: absolute;
     border: 2px solid #fff;
     border-radius: 100%;
-    animation: circleMotion 2s infinite ;
+    animation: circleMotion 2s infinite;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @keyframes circleMotion {
-    0%{
+    0% {
         transform: scale(0);
     }
-    100%{
+
+    100% {
         transform: scale(1.2);
     }
 }
 
 .col-exp-about .exp-about-box .exp-about-item .cal-date {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
-.col-exp-about .exp-about-box .exp-about-item .inst-name{
+
+.col-exp-about .exp-about-box .exp-about-item .cal-date span {
+    line-height: 1.1;
+    padding-left: 5px;
+}
+
+.col-exp-about .exp-about-box .exp-about-item .inst-name {
     padding-bottom: 10px;
 }
+
 .col-exp-about .exp-about-box .exp-about-item .description-about p {
     margin-bottom: 0px;
 }
 
 /* ---- About CSS End ---- */
+
+
+/* ---- Portfolio CSS Start ---- */
+
+.cus-container-portfolio {
+    padding-top: 5vmin;
+}
+
+.cus-container-photo-gallery {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.cus-container-photo-gallery .item {
+    position: relative;
+}
+
+.cus-container-photo-gallery .item .project-name {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #0000005e;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    pointer-events: none;
+}
+
+/* ---- Portfolio CSS End ---- */
+
+.lb-closeContainer {
+    position: absolute;
+    top: -35px;
+    right: 10px;
+}
