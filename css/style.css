@@ -383,6 +383,7 @@ h5.hello-text:before {
     display: flex;
     justify-content: center;
 }
+
 .cus-row-contact .contact-box {
     display: flex;
     flex-direction: column;
@@ -407,5 +408,138 @@ h5.hello-text:before {
     text-decoration: none;
     color: #222;
 }
+
+/* -- Contact Form CSS Start -- */
+.contact-inform.form{
+    margin-top: 5vmin;
+    margin-bottom: 5vmin;
+    padding: 20px;
+    background-color: #00000014;
+}
+.form-control {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    position: absolute;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: inherit;
+    left: 1rem;
+    top: 0.75rem;
+    padding: 0 0.25rem;
+    color: #222;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.form-input {
+    position: absolute;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: inherit;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    resize: none;
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    border: none;
+    color: #222;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-input::placeholder {
+    opacity: 0;
+    visibility: hidden;
+    color: transparent;
+}
+
+.form-input:focus {
+    outline: none;
+    border: none;
+}
+
+.form-input:focus~.form-label {
+    top: -0.75rem;
+    left: 1rem;
+    z-index: 5;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #222;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-input:not(:placeholder-shown).form-input:not(:focus)~.form-label {
+    top: -0.75rem;
+    left: 1rem;
+    z-index: 9;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-textarea {
+    position: absolute;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: inherit;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    resize: none;
+    width: 100%;
+    height: 70px;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    border:none;
+    color: #222;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+}
+.cus-form-textarea{
+    height: 70px ;
+}
+
+.form-textarea::placeholder {
+    opacity: 0;
+    visibility: hidden;
+    color: transparent;
+}
+
+.form-textarea:focus {
+    outline: none;
+    border: none;
+}
+
+.form-textarea:focus~.form-label {
+    top: -0.75rem;
+    left: 1rem;
+    z-index: 5;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #222;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-textarea:not(:placeholder-shown).form-textarea:not(:focus)~.form-label {
+    top: -0.75rem;
+    left: 1rem;
+    z-index: 9;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+/* -- Contact Form CSS End -- */
+
 
 /* ---- Contact CSS End ---- */
