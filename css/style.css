@@ -26,6 +26,7 @@ body {
     height: 100%;
     font-size: 16px;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 
@@ -103,6 +104,29 @@ body {
     border-radius: 30% 70% 67% 33% / 30% 30% 70% 70%;
     padding: 39px;
     z-index: -1;
+    animation: rotationf 2s infinite alternate;
+}
+
+/* .container.cus-container:after {
+    content: '';
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    background: #0000000d;
+    border-radius: 30% 70% 67% 33% / 30% 30% 70% 70%;
+    padding: 39px;
+    z-index: -1;
+    animation: rotation 2s infinite alternate;
+} */
+
+@keyframes rotationf {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
 }
 
 .cus-container .row {
@@ -189,6 +213,34 @@ h5.hello-text:before {
 .cus-container-about {
     padding-top: 5vmin;
     padding-bottom: 5vmin;
+    position: relative;
+}
+
+.cus-container-about:before {
+    content: '';
+    width: calc(25px + 1vmin);
+    height: calc(25px + 1vmin);
+    position: fixed;
+    background: #0000000d;
+    border-radius: 30% 70% 67% 33% / 30% 30% 70% 70%;
+    z-index: -1;
+    animation: rotation 2s linear 3s infinite alternate;
+    right: 27px;
+    top: 0%;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(-0deg);
+    }
+
+    75% {
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
 }
 
 /* -- Common heading for all menu start -- */
@@ -198,6 +250,9 @@ h5.hello-text:before {
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 5vmin;
+    display: inline-block;
+    border-bottom: 2px solid #ff602c;
+
 }
 
 /* -- Common heading for all menu end -- */
@@ -382,11 +437,12 @@ h5.hello-text:before {
     justify-content: center;
     align-items: center;
     padding-bottom: calc(10px + 2vmin);
-    
+
 }
-.contact-para-section .contact-sub-heading-sec.cus-form-sub-heading{
+
+.contact-para-section .contact-sub-heading-sec.cus-form-sub-heading {
     padding-top: calc(20px + 2vmin);
-    
+
 }
 
 .contact-para-section .contact-sub-heading-sec h4 {
@@ -559,6 +615,20 @@ h5.hello-text:before {
     font-weight: 500;
     transition: all 0.2s ease-in-out;
 }
+
+.cus-sumbit-btn {
+    background-color: #ff602c;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.cus-sumbit-btn:hover, .cus-sumbit-btn:active, .cus-sumbit-btn:focus {
+    background-color: #ff602c;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
 
 /* -- Contact Form CSS End -- */
 

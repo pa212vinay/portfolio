@@ -25,7 +25,7 @@
   <Header>
     <nav class="navbar navbar-expand-lg navbar-light navbar-transparent cus-navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="name-logo" src="./img/logo.png" alt=""></a>
+        <a class="navbar-brand" href="\"><img class="name-logo" src="./img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,14 +33,11 @@
         <div class="collapse navbar-collapse cus-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="\">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about-sec">About Me</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#service-sec">Services</a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#portfolio-sec">Portfolio</a>
             </li>
@@ -80,15 +77,7 @@
             </h2>
             <p class="my-para">I'm a passionate UI Engineer with extensive experience for over 3 years. My experties is
               to create website</p>
-            <a href="./img/Vinay_kumar_resume.pdf" download class="btn download-resume">Download Resume</a>
-            <!-- <div class="social-media-links">
-              <ul class="social-media-icons">
-                <li><a href="#"> <img src="./img/linkedin.svg" alt="Linkedin"></a></li>
-                <li><a href="#"><img src="./img/google-gmail.svg" alt=""></a></li>
-                <li><a href="https://github.com/pa212vinay/" target="_blank"><img src="./img/github-octocat.svg"
-                      alt=""></a></li>
-              </ul>
-            </div> -->
+            <a href="./img/Vinay_kumar_resume.pdf" download class="btn download-resume">Download CV</a>
           </div>
         </div>
         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 cus-col-2">
@@ -101,43 +90,31 @@
   </main>
 
   <!-- About Section -->
-  <div class="container cus-container-about">
+  <div class="container cus-container-about" id="about-sec">
     <div class="row cus-row-about">
       <div class="col-xxl-12 col-xl-12 col-12 col-about">
         <div class="about-para-section">
-          <h2 class="common-heading" id="about-sec">About Me</h2>
+          <h2 class="common-heading">About Me</h2>
           <h3 class="about-sub-heading">I am Vinay Kumar Verma <span>( UI Engineer )</span></h3>
           <p class="about-para">UI Engineer having 3+ years of experience in HTML5/CSS3, Bootstrap,In this time period i
             am working on
             other technologies as well like JavaScript, jQuery, React js.</p>
         </div>
+
         <div class="row cus-row-personal-details">
+          <!-- Personal-Information Section Start-->
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 personal-info">
-            <!-- <div class="row">
-              <div class="info-item">
-                <p><code>var Birthday = <span>&#123; date : 12, month : "june", year : 1994 &#125;&#59;</span></code></p>
-              </div>
-              <div class="info-item">
-                <p><code>var Age = <span>29&#59;</span></code></p>
-              </div>
-              <div class="info-item">
-                <p><code>var Email = <span>"vinaykumarverma12@gmail.com"&#59;</span></code></p>
-              </div>
-              <div class="info-item">
-                <p><code>var City = <span>"Indore (M.P.)"&#59;</span></code></p>
-              </div>
-              <div class="info-item">
-                <p><code>var Degree = <span>"IT (B.E.)"&#59;</span></code></p>
-              </div>
-            </div> -->
             <div class="col info-item">
               <p>
                 <code>var Personal_Info = <br> 
                   <span>&#123; <br>&nbsp;&nbsp; Birthday : " 12 june 1994 ", <br> &nbsp;&nbsp; Age : 29, <br> &nbsp;&nbsp; Email : " vinaykumarverma12@gmail.com ", <br> &nbsp;&nbsp; Degree : " IT (B.E.) ", <br> &nbsp;&nbsp; City : " Indore " <br> &#125;&#59;</span></code>
               </p>
             </div>
-            <a href="./img/Vinay_kumar_resume.pdf" download class="btn download-resume">Download Resume</a>
+            <a href="./img/Vinay_kumar_resume.pdf" download class="btn download-resume">Download CV</a>
           </div>
+          <!-- Personal-Information Section End-->
+
+          <!-- Skill Section Start-->
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 personal-skills">
             <div class="skill-info">
               <div class="skill-progress">
@@ -180,10 +157,14 @@
               </div>
             </div>
           </div>
+          <!-- Skill Section End-->
         </div>
       </div>
+
       <div class="col-xxl-12 col-xl-12 col-12 col-exp-about">
         <div class="row education-sec">
+
+          <!-- Academic Record Section Start-->
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 sub-col-exp-about">
             <div class="exp-about-box">
               <div class="education-title">
@@ -236,6 +217,9 @@
 
             </div>
           </div>
+          <!-- Academic Record Section End-->
+
+          <!-- Work Experience Section Start-->
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 sub-col-exp-about">
             <div class="exp-about-box">
               <div class="education-title">
@@ -298,6 +282,7 @@
 
             </div>
           </div>
+          <!--  Work Experience Section End-->
 
         </div>
       </div>
@@ -312,6 +297,8 @@
           <h2 class="common-heading">portfolio</h2>
         </div>
       </div>
+
+      <!-- Project Section Start-->
       <div class="col-xxl-12 col-xl-12 col-12 col-portfolio-2">
         <div class="portfolio-box">
           <div class="portfolio-item">
@@ -561,6 +548,7 @@
           </div>
         </div>
       </div>
+      <!-- Project Section ENd-->
     </div>
   </div>
 
@@ -576,6 +564,7 @@
           </div>
         </div>
       </div>
+      <!-- Contact Details Section Start-->
       <div class="col-xxl-6 col-xl-6 col-sm-12 col-12 col-contact-2 mb-3">
         <div class="contact-box">
           <img src="./img/round-phone-iphone.svg" alt="">
@@ -590,14 +579,18 @@
           <a href="mailto:vinaykumarverma12@gmail.com">vinaykumarverma12@gmail.com</a>
         </div>
       </div>
+      <!-- Contact Details Section Start-->
+
+      <!-- Contact Form Section Start-->
       <div class="col-xxl-12 col-xl-12 col-sm-12 col-12">
         <div class="contact-para-section">
           <div class="contact-sub-heading-sec cus-form-sub-heading">
             <h4>Send me an email</h4>
-            <p>I'm vermy responsive to messages</p>
+            <p>I'm very responsive to messages</p>
           </div>
         </div>
-        <form name="contact" action="https://formsubmit.co/0a1ace9f62205fe5e1bb5322e93dad0b" method="POST" class="contact-inform form">
+        <form name="contact" action="https://formsubmit.co/0a1ace9f62205fe5e1bb5322e93dad0b" method="POST"
+          class="contact-inform form">
           <div class="row">
             <div class="col-xxl-6 col-xl-6 col-sm-12 col-12">
               <div class="form-control">
@@ -625,20 +618,27 @@
             </div>
             <div class="col-xxl-12 col-xl-12 col-sm-12 col-12">
               <div class="form-control cus-form-textarea">
-                <textarea class="form-textarea" name="textarea" placeholder="Message" id="Message" ></textarea>
+                <textarea class="form-textarea" name="textarea" placeholder="Message" id="Message"></textarea>
                 <label for="subject" class="form-label">Subject</label>
               </div>
             </div>
 
             <div class="col-xxl-12 col-xl-12 col-sm-12 col-12">
-              <button type="submit" class="btn btn-primary">Send Message</button>
+              <button type="submit" class="btn btn-primary cus-sumbit-btn">Send Message</button>
             </div>
           </div>
         </form>
       </div>
+      <!-- Contact Form Section Start-->
     </div>
   </div>
 
+  <!-- Footer Section -->
+  <footer class="cus-footer text-center">
+    <div class="footer-sec">
+      <span>Created By &#9819; Vinay Kumar Verma - 2023</span>
+    </div>
+  </footer>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
