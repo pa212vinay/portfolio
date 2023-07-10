@@ -22,7 +22,7 @@ body {
     font-family: "Ysabeau Infant";
     font-weight: 500;
     /* background: #e9e9e9 !important; */
-    background: url(../img/backimg.jpg) 100% bottom no-repeat;
+    background: url(../img/backimg.jpg) 100% center no-repeat;
     height: 100%;
     font-size: 16px;
     background-attachment: fixed;
@@ -94,6 +94,17 @@ body {
     padding-bottom: 12vmin;
 }
 
+.container.cus-container:before {
+    content: '';
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    background: #0000000d;
+    border-radius: 30% 70% 67% 33% / 30% 30% 70% 70%;
+    padding: 39px;
+    z-index: -1;
+}
+
 .cus-container .row {
     align-items: center;
 }
@@ -157,13 +168,15 @@ h5.hello-text:before {
 .iam-img {
     padding: 20px;
     background: #edc0c026;
-    border-radius: 100%;
+    border-radius: 30% 70% 67% 33% / 30% 30% 70% 70%;
     overflow: hidden;
     border: 10px solid #fff;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    outline: 1px solid #ff602c;
-    outline-offset: -5px;
+    /* outline: 1px solid #ff602c;
+    outline-offset: -5px; */
+    position: relative;
 }
+
 
 .iam-img .iam {
     width: 45vmin;
@@ -368,6 +381,12 @@ h5.hello-text:before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: calc(10px + 2vmin);
+    
+}
+.contact-para-section .contact-sub-heading-sec.cus-form-sub-heading{
+    padding-top: calc(20px + 2vmin);
+    
 }
 
 .contact-para-section .contact-sub-heading-sec h4 {
@@ -410,12 +429,12 @@ h5.hello-text:before {
 }
 
 /* -- Contact Form CSS Start -- */
-.contact-inform.form{
-    margin-top: 5vmin;
+.contact-inform.form {
     margin-bottom: 5vmin;
     padding: 20px;
     background-color: #00000014;
 }
+
 .form-control {
     position: relative;
     width: 100%;
@@ -501,13 +520,14 @@ h5.hello-text:before {
     height: 70px;
     padding: 0.75rem 1.25rem;
     border-radius: 0.25rem;
-    border:none;
+    border: none;
     color: #222;
     background: transparent;
     transition: all 0.2s ease-in-out;
 }
-.cus-form-textarea{
-    height: 70px ;
+
+.cus-form-textarea {
+    height: 70px;
 }
 
 .form-textarea::placeholder {
@@ -539,6 +559,7 @@ h5.hello-text:before {
     font-weight: 500;
     transition: all 0.2s ease-in-out;
 }
+
 /* -- Contact Form CSS End -- */
 
 
