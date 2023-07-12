@@ -416,6 +416,20 @@ h5.hello-text:before {
     pointer-events: none;
 }
 
+.cus-container-photo-gallery .item .open-website {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -68%);
+    background: #ff602c;
+    padding: 5px 10px;
+    line-height: 1.1;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
+
 /* ---- Portfolio CSS End ---- */
 
 .lb-closeContainer {
@@ -624,7 +638,10 @@ h5.hello-text:before {
     border: none !important;
     box-shadow: none !important;
 }
-.cus-sumbit-btn:hover, .cus-sumbit-btn:active, .cus-sumbit-btn:focus {
+
+.cus-sumbit-btn:hover,
+.cus-sumbit-btn:active,
+.cus-sumbit-btn:focus {
     background-color: #ff602c;
     outline: none !important;
     border: none !important;
